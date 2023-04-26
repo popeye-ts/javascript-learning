@@ -26,3 +26,38 @@ function myFunc(val){
 }
 document.querySelector('h3').innerHTML = newArray;
 // document.querySelector('h3').innerHTML = newArray;
+
+function Drone(color, width, height){
+    this.color = color;
+    this.width = width;
+    this.height = height;
+}
+var drone1 = new Drone('blue', 45, 23)
+
+
+var truck = {
+    size : 890,
+    color : 'orange',
+    company : function(){
+        return this
+    }
+}
+
+// prototype with constructor
+
+function Apple (taste, color){
+    this.taste = taste;
+    this.color = color;
+}
+Apple.prototype = {
+    eat : function(){return this},
+    throw : function(){return 'apple is thrown'}
+}
+var apple1 = new Apple('sweet', 'light green')
+var apple2 = new Apple('sour', 'green')
+
+// for loop
+var friends = ['john', 'lawerance', 'jaceb']
+for(i = 0; i < friends.length; i++){
+    console.log(friends[i])
+}
