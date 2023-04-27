@@ -11,7 +11,7 @@ function myFunction(num){
     return num+2;
     return num;
 }
-document.querySelector('h2').innerHTML = newArr;
+// document.querySelector('h2').innerHTML = newArr;
 
 
 let array = ['hi', 4, 'kl', 8, 'tu', 6];
@@ -24,7 +24,7 @@ function myFunc(val){
 
     }
 }
-document.querySelector('h3').innerHTML = newArray;
+// document.querySelector('h3').innerHTML = newArray;
 // document.querySelector('h3').innerHTML = newArray;
 
 function Drone(color, width, height){
@@ -59,5 +59,29 @@ var apple2 = new Apple('sour', 'green')
 // for loop
 var friends = ['john', 'lawerance', 'jaceb']
 for(i = 0; i < friends.length; i++){
-    console.log(friends[i])
+    // console.log(friends[i])
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// final project
+document.querySelector('.button').addEventListener('click', function(){
+    let elements = document.getElementsByName('property');
+
+    for( index = 0; index < elements.length; index++ )
+    {
+        console.log(elements [ index ].getAttribute('id') )
+        console.log(elements [ index ].value )
+    }
+    // console.log(elements);
+})
